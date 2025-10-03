@@ -1,2 +1,59 @@
 
 /* Your CSS Code here. */
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; }
+
+/* Outer table layout */
+.outer {
+  border-collapse: separate;             
+  border-spacing: 10px;                  
+  width: 100%;
+  height: 100%;
+  border: 2px solid #333;
+}
+
+.outer .cell {
+  vertical-align: top;                   
+  padding: 8px;
+  border: 2px solid #333;
+}
+
+/* Nested tables */
+.nested {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 2px solid #333;
+}
+
+.nested th,
+.nested td {
+  border: 2px solid #333;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Titles (thead) */
+.nested thead th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+/* List styling inside Nested Table 1 */
+.list {
+  margin: 10px 20px;
+  text-align: left;     
+}
+
+/* Link in Nested Table 3 */
+.link {
+  color: #1a0dab;       /* classic link blue */
+  text-decoration: underline;
+}
+
+/* Black cell with white text in Nested Table 4 */
+.black-cell {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+}
